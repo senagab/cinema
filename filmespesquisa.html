@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<HTML>
+<HEAD>
+	<TITLE>Resultado Pesquisa</TITLE>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</HEAD>
+<BODY>
+	<div class="container">
+		<div class="header clearfix"></div>
+		<h3 style="text-align: center;">Cinema em Casa!</h3>
+
+		<div class="jumbotron">
+			<div class="col-lg-12">
+				<form class="input-group" id="formulario">
+					<input type="txt" name="" class="form-control" id="pesquisar" placeholder="Digite o nome do filme">
+					<span class="input-group-btn">
+						<button class="btn btn-primary" type="submit" id="btnPesquisar">Pesquisar</button>
+					</span>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<div class="container">
+		<div class="row" id="filmes"></div>
+</div>
+   
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/filmespesquisa.js"></script>
+  <script src="js/main.js"></script>
+
+	
+</BODY>
+</HTML>
