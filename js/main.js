@@ -40,6 +40,7 @@ axios.get('https://api.themoviedb.org/3/trending/all/week?api_key=b3d1631a057dc6
  //chamada do metodo para carregar assim que a pagina for aberta
 buscarFilmesWeek();
 
+$('#formulario').submit(pesquisarFilme);
 // document.getElementById('formulario').addEventListener('submit', pesquisarFilme);
 
 Listar();

@@ -115,33 +115,34 @@ function ListarE()
      }
 
 }
-// function Apagar(i, id) {
-//   var codigo = filmes[i].id
-//   var tbFilmesE = localStorage.getItem("tbFilmes");
-//   tbFilmesE = JSON.parse(tbFilmesE);
+function Apagar(i, id) {
+  var codigo = filmes[i].id
+  var tbFilmesE = localStorage.getItem("tbFilmes");
+  tbFilmesE = JSON.parse(tbFilmesE);
   
-//   if (tbFilmesE == null) {
-//       alert ("LocalStorage vazio");
-//       return;
-//   }
+  if (tbFilmesE == null) {
+      alert ("LocalStorage vazio");
+      return;
+  }
  
-//   var filme = BuscaFilme("Codigo", codigo);
-//   var indice_selecionado = eliminar
+  var filme = BuscaFilme("Codigo", codigo);
+  var indice_selecionado = eliminar
 
-//   function BuscaFilme(propriedade, valor)
-//     {
-//       var filme = null;
-//         for (var item in tbFilmesE) {
-//           var i = JSON.parse(tbFilmesE[item]);
-//           if (i[propriedade] == valor){
-//             filme = i;
-//             eliminar = item;
-//             //debugger;
-//           }
-//         }
-//         return filme, eliminar;
-//     }
-// }
+  function BuscaFilme(propriedade, valor)
+    {
+      var filme = null;
+        for (var item in tbFilmesE) {
+          var i = JSON.parse(tbFilmesE[item]);
+          if (i[propriedade] == valor){
+            filme = i;
+            eliminar = item;
+            //debugger;
+          }
+        }
+        return filme, eliminar;
+    }
+}
+
 $('.btnExcluir').click(function(){
   var filmesAtuais = JSON.parse(localStorage.getItem('tbFilmes'));
   var codigoApagar = $(this).parents('tr').find('.codigo').text();
